@@ -44,7 +44,6 @@ class MyClickListener(
 
     interface OnRecyclerClickListener{
         fun onItemClick(view: View, position: Int)
-        fun onDoubleClick(view: View, position: Int)
         fun onItemLongClick(view: View, position: Int)
     }
 

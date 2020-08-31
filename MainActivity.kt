@@ -37,11 +37,9 @@ class MainActivity : AppCompatActivity(), MyClickListener.OnRecyclerClickListene
         "アイテムがシングルクリックされました。".easyLog()
     }
 
-    override fun onDoubleClick(view: View, position: Int) {
-        "アイテムがダブルクリックされました。".easyLog()
-    }
 
     override fun onItemLongClick(view: View, position: Int) {
-        "アイテムが長押しされました。".easyLog()
+        val dialog = MyDialog()
+        dialog.show(supportFragmentManager, "HASEGAWA")
     }
 }
